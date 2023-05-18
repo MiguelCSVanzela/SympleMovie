@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(61, 198, 243);
+    background: linear-gradient(90deg, rgba(61, 198, 243, 1) 8%, rgba(134, 55, 170, 0.9072421204810049) 45%, rgba(200, 41, 51, 1) 100%);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+
+section {
+    padding: 90px 0;
+}
+
+#inicio {
+    padding: 20px 0;
+
+}
+
+header,
+#rodape {
+    background-color: rgba(255, 255, 255, 0.31);
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a,
+.nav-item button {
+    text-decoration: none;
+    max-height: 55px;
+    font-size: 30px;
+    font-weight: lighter;
+    height: 100%;
+    color: #fff;
+}
+
+.nav-item span {
+    margin-right: 10px;
+}
+
+.dropdown button {
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+.dropdown button .dropdown button span {
+    margin-right: 10px;
+}
+
+.dropdown a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: lighter;
+}
+
+.dropdown-toggle {
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+}
+
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 20px;
+}
+
+.carousel-item img {
+    border-radius: 20px;
+}
+
+#carouselMovies .row .card {
+    margin: auto;
+}
+
+.carousel-inner {
+    position: relative;
+    text-align: center;
+}
+
+.carousel-item img {
+    height: 40vw;
+    width: 100%;
+}
+
+
+
+
+
+#placeholder-img {
+    height: 100px;
+}
+
+#filmeControls a img {
+    height: 40px;
+}
+
+div.card {
+    height: 350px;
+    width: 220px;
+    margin: 10px 0px;
+}
+
+.carousel-inner row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controle-filmes {
+    display: none;
+}
+
+.card,
+.imagem-filme {
+    border-radius: 20px;
+    height: 100px;
+}
+
+.card-img-overlay {
+    display: none;
+    color: #fff;
+}
+
+.card-text {
+    font-size: 2px;
+}
+
+.card-img-overlay:hover {
+    transition-duration: 2s;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.492);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+
+.controles {
+    margin-top: 10px;
+}
+
+.play img,
+.trailer img {
+    height: 30px;
+    display: none;
+    transition-duration: .8s;
+    border-radius: 0%;
+}
+
+.play img:hover,
+.trailer img:hover {
+    transition-duration: .8s;
+    height: 40px;
+}
+
+
+#rodape {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+
+
+
+/* Tela Pequena */
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+
+    button.navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 1em;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+    }
+
+    .nav-item a,
+    .nav-item button {
+        font-size: 15px;
+    }
+
+    .imagem-filme {
+        margin: 10px 0;
+        height: 400px;
+    }
+
+    .carousel-caption p {
+        font-size: 30px;
+    }
+
+    section {
+        margin: 10px 10px;
+        padding: 0;
+    }
+
+    #placeholder-img {
+        height: 60px;
+    }
+
+    .row>* {
+        margin-top: 20px;
+    }
+
+    .card img {
+        height: 100%;
+        margin: 0;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 50px;
+        height: 40px;
+    }
+
+    .card-img-overlay {
+        transition-duration: 0.5s;
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.492);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+
+    .controles {
+        margin-top: 7px;
+    }
+
+    .play img,
+    .trailer img {
+        height: 40px;
+        transition-duration: .8s;
+    }
+
+    .play img:hover,
+    .trailer img:hover {
+        transition: none;
+        height: 40px;
+    }
+
+    #rodape {
+        height: 40px;
+    }
+
+    #rodape h3 {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
+
+
+/* Telas Medias */
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    .col-md-6 {
+        margin: 20px 0;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+    button.navbar-toggler {
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.7em;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+    }
+
+    .nav-item a,
+    .nav-item button {
+        font-size: 30px;
+    }
+
+    .imagem-filme {
+        margin: 10px 0;
+        height: 400px;
+    }
+
+    .carousel-caption p {
+        font-size: 45px;
+    }
+
+    section {
+        margin: 10px 10px;
+        padding: 0;
+    }
+
+    #placeholder-img {
+        height: 80px;
+    }
+
+    .card img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 60px;
+        height: 50px;
+    }
+
+    .card-img-overlay {
+        transition-duration: 0.5s;
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.492);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+
+    .controles {
+        margin-top: 7px;
+    }
+
+    .play img,
+    .trailer img {
+        height: 40px;
+        transition-duration: none;
+    }
+
+    .play img:hover,
+    .trailer img:hover {
+        transition: none;
+        height: 40px;
+    }
+
+    #rodape {
+        height: 60px;
+    }
+
+    #rodape h3 {
+        font-size: 30px;
+        font-weight: lighter;
+    }
+}
+
+/* Telas Grandes */
+@media screen and (min-width: 961px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .nav-item a,
+    .nav-item button {
+        font-size: 40px;
+    }
+
+    .imagem-filme {
+        margin: 10px 0;
+        height: 500px;
+    }
+
+    .apresentacao {
+        max-height: 500px;
+    }
+
+    .carousel-caption p {
+        font-size: 50px;
+    }
+
+    section {
+        margin: 10px 10px;
+        padding: 0;
+    }
+
+    #placeholder-img {
+        height: 90px;
+        text-align: center;
+    }
+
+    .card img {
+        height: 100%;
+        margin: 0;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 50px;
+        height: 40px;
+    }
+
+    .card-img-overlay {
+        display: none;
+        color: #fff;
+    }
+
+    .card-img-overlay:hover {
+        transition-duration: 0.5s;
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.492);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+
+    .controles {
+        margin-top: 7px;
+    }
+
+    .play img,
+    .trailer img {
+        height: 35px;
+        transition-duration: .8s;
+    }
+
+    .play img:hover,
+    .trailer img:hover {
+        transition: .9s;
+        height: 40px;
+    }
+
+    #rodape {
+        height: 50px;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+    }
+
+    #rodape h3 {
+        font-size: 40px;
+        font-weight: lighter;
+    }
+}

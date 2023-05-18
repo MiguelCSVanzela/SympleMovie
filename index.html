@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bibliotecas/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>MOVS</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg text-white">
+            <div class="container">
+                <h1 class="display-5">MOVS</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#inicio" id="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown" role="group">
+                                <button class="dropdown-toggle dropdown-toggle-split"
+                                    data-bs-toggle="dropdown"><span>Categorias</span></button>
+                                <div class="dropdown-menu dropdown-menu-white">
+                                    <a class="dropdown-item" href="#acao" value="Ação">Ação</a>
+                                    <a class="dropdown-item" href="#animacao" value="Animação">Animação</a>
+                                    <a class="dropdown-item" href="#aventura" value="Aventura">Aventura</a>
+                                    <a class="dropdown-item" href="#comedia" value="Comédia">Comédia</a>
+                                    <a class="dropdown-item" href="#documentario" value="Documentário">Documentário</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="inicio" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section>
+            <div class="container mt-100">
+                <div class="row">
+                    <div id="carrosel" class="carousel slide carousel-fade text-center" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div data-bs-interval="2500" class="carousel-item active">
+                                <img src="Imagens/imagem1.jpg" class="apresentacao">
+                                <div class="carousel-caption">
+                                    <p class="display-3">
+                                        Lançamentos
+                                    </p>
+                                </div>
+                            </div>
+                            <div data-bs-interval="2500" class="carousel-item">
+                                <img src="Imagens/imagem2.jpg" class="apresentacao">
+                                <div class="carousel-caption">
+                                    <p class="display-3">
+                                        Renomados
+                                    </p>
+                                </div>
+                            </div>
+                            <div data-bs-interval="2500" class="carousel-item">
+                                <img src="Imagens/imagem3.jpg" class="apresentacao">
+                                <div class="carousel-caption">
+                                    <p class="display-3">
+                                        Qualidade HD
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="secaoMovies">
+            <div class="col-12">
+                <h2 class="text-center display-4 text-white py-0" id="titulo">
+                    <img src="Imagens/streaming.png" id="placeholder-img" />
+                </h2>
+
+                <div id="carouselMovies" class="carousel slide" data-bs-ride="carousel">
+
+                    <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselMovies"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselMovies"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <div class="carousel-inner">
+                        <div data-bs-interval="4000" class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/movie.png" class="imagem-filme" />
+                                            <div class="card-img-overlay d-none">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus fuga ducimus debitis aliquam, nobis necessitatibus
+                                                    excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img src="Imagens/film.png" class="imagem-filme" />
+                                            <div class="card-img-overlay d-none">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/ticket.png" class="imagem-filme" />
+                                            <div class="card-img-overlay d-none">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/dapper.png" class="imagem-filme" />
+                                            <div class="card-img-overlay d-none">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-bs-interval="4000" class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/dapper.png" class="imagem-filme" />
+                                            <div class="card-img-overlay">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img src="Imagens/film.png" class="imagem-filme" />
+                                            <div class="card-img-overlay">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/movie.png" class="imagem-filme" />
+                                            <div class="card-img-overlay">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/ticket.png" class="imagem-filme" />
+                                            <div class="card-img-overlay">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-bs-interval="4000" class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/ticket.png" class="imagem-filme" />
+                                            <div class="card-img-overlay">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="card">
+                                            <img src="Imagens/movie.png" class="imagem-filme" />
+                                            <div class="card-img-overlay">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/film.png" class="imagem-filme" />
+                                            <div class="card-img-overlay">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                                        <div class="card">
+                                            <img src="Imagens/dapper.png" class="imagem-filme" />
+                                            <div class="card-img-overlay">
+                                                <h2 class="card-title">Titulo</h2>
+                                                <div class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                                    repellendus
+                                                    fuga
+                                                    ducimus debitis aliquam, nobis necessitatibus excepturi quaerat.
+                                                </div>
+                                                <div class="d-flex justify-content-around controles">
+                                                    <button type="button" class="btn play">
+                                                        <img src="./Imagens/play.png" title="iniciar o filme" />
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-white trailer">
+                                                        <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="rodape">
+        <div class="container text-center text-white display-6 fw-lighter">
+            <h3>&copy - Todos os Direitos Reservados</h3>
+        </div>
+    </footer>
+
+    <script src="Bibliotecas/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
