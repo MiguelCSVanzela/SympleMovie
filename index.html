@@ -14,18 +14,15 @@
     <header id="cabecalho">
         <div class="navbar navbar-expand-lg text-white">
             <div class="container">
-                <h1 class="display-5">MOVS</h1>
+                <h1 class="display-6">MOVS</h1>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a href="#inicio" id="home">Home</a>
-                        </li>
-                        <li class="nav-item">
                             <div class="dropdown" role="group">
-                                <button class="dropdown-toggle dropdown-toggle-split"
+                                <button type="button" class="dropdown-toggle dropdown-toggle-split p-0"
                                     data-bs-toggle="dropdown"><span>Categorias</span></button>
                                 <div class="dropdown-menu dropdown-menu-white">
                                     <a class="dropdown-item" href="#acao" value="Ação">Ação</a>
@@ -42,13 +39,13 @@
         </div>
     </header>
 
-    <div id="inicio" data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div>
         <section>
             <div class="container mt-100">
                 <div class="row">
                     <div id="carrosel" class="carousel slide carousel-fade text-center" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div data-bs-interval="2500" class="carousel-item active">
+                            <div data-bs-interval="3500" class="carousel-item active">
                                 <img src="Imagens/imagem1.jpg" class="apresentacao">
                                 <div class="carousel-caption">
                                     <p class="display-3">
@@ -56,7 +53,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div data-bs-interval="2500" class="carousel-item">
+                            <div data-bs-interval="3500" class="carousel-item">
                                 <img src="Imagens/imagem2.jpg" class="apresentacao">
                                 <div class="carousel-caption">
                                     <p class="display-3">
@@ -64,7 +61,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div data-bs-interval="2500" class="carousel-item">
+                            <div data-bs-interval="3500" class="carousel-item">
                                 <img src="Imagens/imagem3.jpg" class="apresentacao">
                                 <div class="carousel-caption">
                                     <p class="display-3">
@@ -382,12 +379,12 @@
                 </div>
             </div>
         </section>
+        <footer id="rodape">
+            <div class="container text-center text-white display-6 fw-lighter">
+                <h3>&copy - Todos os Direitos Reservados</h3>
+            </div>
+        </footer>
     </div>
-    <footer id="rodape">
-        <div class="container text-center text-white display-6 fw-lighter">
-            <h3>&copy - Todos os Direitos Reservados</h3>
-        </div>
-    </footer>
 
     <script src="Bibliotecas/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>

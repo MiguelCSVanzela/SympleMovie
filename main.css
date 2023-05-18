@@ -373,6 +373,12 @@ div.card {
         max-width: 1024px;
     }
 
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .nav-item a,
     .nav-item button {
         font-size: 40px;
@@ -384,7 +390,7 @@ div.card {
     }
 
     .apresentacao {
-        max-height: 500px;
+        max-height: 400px;
     }
 
     .carousel-caption p {
@@ -442,11 +448,19 @@ div.card {
         height: 40px;
     }
 
+    div section {
+        position: relative;
+    }
+
+    footer {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
     #rodape {
         height: 50px;
-        bottom: 0;
         width: 100%;
-        position: absolute;
     }
 
     #rodape h3 {
