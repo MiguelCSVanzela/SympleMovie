@@ -1,21 +1,18 @@
 const card = document.querySelectorAll('.card');
 const bodyCard = document.querySelectorAll('.card-img-overlay');
-const play = document.querySelectorAll('.play img');
-const trailer = document.querySelectorAll('.trailer img');
+const play = document.querySelectorAll('.play i');
 
 for (let i = 0; i < card.length; i++) {
     card[i].addEventListener('mouseenter', function () {
         bodyCard[i].style.display = 'block';
         setTimeout(function () {
             play[i].style.display = 'block';
-            trailer[i].style.display = 'block';
         }, 2500);
     })
     card[i].addEventListener('mouseleave', function () {
         bodyCard[i].style.display = 'none';
         setTimeout(function () {
             play[i].style.display = 'none';
-            trailer[i].style.display = 'none';
         }, 1000);
     })
 }

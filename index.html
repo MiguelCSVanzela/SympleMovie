@@ -6,71 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Bibliotecas/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="main.css">
     <title>MOVS</title>
 </head>
 
 <body>
     <header id="cabecalho">
-        <div class="navbar navbar-expand-lg text-white">
+        <div class="navbar">
             <div class="container">
-                <h1 class="display-6">MOVS</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <div class="dropdown" role="group">
-                                <button type="button" class="dropdown-toggle dropdown-toggle-split p-0"
-                                    data-bs-toggle="dropdown"><span>Categorias</span></button>
-                                <div class="dropdown-menu dropdown-menu-white">
-                                    <a class="dropdown-item" href="#acao" value="Ação">Ação</a>
-                                    <a class="dropdown-item" href="#animacao" value="Animação">Animação</a>
-                                    <a class="dropdown-item" href="#aventura" value="Aventura">Aventura</a>
-                                    <a class="dropdown-item" href="#comedia" value="Comédia">Comédia</a>
-                                    <a class="dropdown-item" href="#documentario" value="Documentário">Documentário</a>
-                                </div>
-                            </div>
+                <h1 class="navbar-brand fw-lighter">MOVS</h1>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-outline-dark dropdown-toggle"
+                        data-bs-toggle="dropdown">Categorias</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#acao" value="Ação">Ação</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#animacao" value="Animação">Animação</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#aventura" value="Aventura">Aventura</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#comedia" value="Comédia">Comédia</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#documentario" value="Documentário">Documentário</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
 
-    <section>
-        <div class="container mt-100">
-            <div class="row">
-                <div id="carrosel" class="carousel slide carousel-fade text-center" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div data-bs-interval="3500" class="carousel-item active">
-                            <img src="Imagens/imagem1.jpg" class="apresentacao">
-                            <div class="carousel-caption">
-                                <p class="display-3">
-                                    Lançamentos
-                                </p>
-                            </div>
-                        </div>
-                        <div data-bs-interval="3500" class="carousel-item">
-                            <img src="Imagens/imagem2.jpg" class="apresentacao">
-                            <div class="carousel-caption">
-                                <p class="display-3">
-                                    Renomados
-                                </p>
-                            </div>
-                        </div>
-                        <div data-bs-interval="3500" class="carousel-item">
-                            <img src="Imagens/imagem3.jpg" class="apresentacao">
-                            <div class="carousel-caption">
-                                <p class="display-3">
-                                    Qualidade HD
-                                </p>
-                            </div>
-                        </div>
+    <section id="cabecalho" class="m-0">
+        <div id="carrosel" class="carousel slide carousel-fade text-center" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3500" class="carousel-item active">
+                    <img src="Imagens/animacao.jpg" class="apresentacao">
+                    <div class="carousel-caption">
+                        <p class="display-3">
+                            Animação
+                        </p>
+                    </div>
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img src="Imagens/comedia.jpg" class="apresentacao">
+                    <div class="carousel-caption">
+                        <p class="display-3">
+                            Comédia
+                        </p>
+                    </div>
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img src="Imagens/acao.jpg" class="apresentacao">
+                    <div class="carousel-caption">
+                        <p class="display-3">
+                            Ação
+                        </p>
+                    </div>
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img src="Imagens/documentario.jpg" class="apresentacao">
+                    <div class="carousel-caption">
+                        <p class="display-3">
+                            Documentário
+                        </p>
+                    </div>
+                </div>
+                <div data-bs-interval="3500" class="carousel-item">
+                    <img src="Imagens/aventura.jpg" class="apresentacao">
+                    <div class="carousel-caption">
+                        <p class="display-3">
+                            Aventura
+                        </p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -108,10 +123,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -130,10 +142,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -152,10 +161,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -174,10 +180,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -192,7 +195,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                                     <div class="card">
                                         <img src="Imagens/dapper.png" class="imagem-filme" />
-                                        <div class="card-img-overlay">
+                                        <div class="card-img-overlay d-none">
                                             <h2 class="card-title">Titulo</h2>
                                             <div class="card-text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -202,10 +205,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -214,7 +214,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="card">
                                         <img src="Imagens/film.png" class="imagem-filme" />
-                                        <div class="card-img-overlay">
+                                        <div class="card-img-overlay d-none">
                                             <h2 class="card-title">Titulo</h2>
                                             <div class="card-text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -224,10 +224,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -236,7 +233,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                                     <div class="card">
                                         <img src="Imagens/movie.png" class="imagem-filme" />
-                                        <div class="card-img-overlay">
+                                        <div class="card-img-overlay d-none">
                                             <h2 class="card-title">Titulo</h2>
                                             <div class="card-text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -246,10 +243,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -258,7 +252,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                                     <div class="card">
                                         <img src="Imagens/ticket.png" class="imagem-filme" />
-                                        <div class="card-img-overlay">
+                                        <div class="card-img-overlay d-none">
                                             <h2 class="card-title">Titulo</h2>
                                             <div class="card-text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -268,10 +262,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -286,7 +277,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                                     <div class="card">
                                         <img src="Imagens/ticket.png" class="imagem-filme" />
-                                        <div class="card-img-overlay">
+                                        <div class="card-img-overlay d-none">
                                             <h2 class="card-title">Titulo</h2>
                                             <div class="card-text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -296,10 +287,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -308,7 +296,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12">
                                     <div class="card">
                                         <img src="Imagens/movie.png" class="imagem-filme" />
-                                        <div class="card-img-overlay">
+                                        <div class="card-img-overlay d-none">
                                             <h2 class="card-title">Titulo</h2>
                                             <div class="card-text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -318,10 +306,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -330,7 +315,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                                     <div class="card">
                                         <img src="Imagens/film.png" class="imagem-filme" />
-                                        <div class="card-img-overlay">
+                                        <div class="card-img-overlay d-none">
                                             <h2 class="card-title">Titulo</h2>
                                             <div class="card-text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -340,10 +325,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>
@@ -352,7 +334,7 @@
                                 <div class="col-lg-3 col-md-6 col-sm-12 ">
                                     <div class="card">
                                         <img src="Imagens/dapper.png" class="imagem-filme" />
-                                        <div class="card-img-overlay">
+                                        <div class="card-img-overlay d-none">
                                             <h2 class="card-title">Titulo</h2>
                                             <div class="card-text">
                                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
@@ -362,10 +344,7 @@
                                             </div>
                                             <div class="d-flex justify-content-around controles">
                                                 <button type="button" class="btn play">
-                                                    <img src="./Imagens/play.png" title="iniciar o filme" />
-                                                </button>
-                                                <button type="button" class="btn btn-outline-white trailer">
-                                                    <img src="Imagens/tira-de-filme.png" title="ver o trailer" />
+                                                    <i class="bi bi-play-circle" title="Iniciar Filme"></i>
                                                 </button>
                                             </div>
                                         </div>

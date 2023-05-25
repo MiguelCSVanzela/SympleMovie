@@ -5,8 +5,7 @@
 }
 
 body {
-    background: rgb(61, 198, 243);
-    background: linear-gradient(90deg, rgba(61, 198, 243, 1) 8%, rgba(134, 55, 170, 0.9072421204810049) 45%, rgba(200, 41, 51, 1) 100%);
+    background: linear-gradient(90deg, rgb(170, 168, 168) 8%, rgba(79, 74, 82, 0.907) 45%, rgb(1, 0, 0) 100%);
 }
 
 header {
@@ -16,7 +15,9 @@ header {
     z-index: 100;
 }
 
-
+header h1 {
+    color: #0c0b0b;
+}
 
 section {
     padding: 90px 0;
@@ -29,39 +30,16 @@ section {
 
 header,
 #rodape {
-    background-color: rgba(255, 255, 255, 0.31);
-}
-
-
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav-item a,
-.nav-item button {
-    text-decoration: none;
-    max-height: 55px;
-    font-size: 30px;
-    font-weight: lighter;
-    height: 100%;
-    color: #fff;
-}
-
-.nav-item span {
-    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.585);
 }
 
 .dropdown button {
-    border: none;
-    color: #fff;
+    border: 0.5px solid #0c0b0b;
+    color: #0c0b0b;
     margin-left: 5px;
     background-color: transparent;
 }
 
-.dropdown button .dropdown button span {
-    margin-right: 10px;
-}
 
 .dropdown a {
     text-decoration: none;
@@ -70,24 +48,12 @@ header,
     font-weight: lighter;
 }
 
-.dropdown-toggle {
-    background-color: #000;
-    color: #fff;
-    height: 100%;
-}
-
-
-
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 30px;
     height: 20px;
 }
 
-.carousel-item img {
-    border-radius: 20px;
-}
 
 #carouselMovies .row .card {
     margin: auto;
@@ -102,10 +68,6 @@ header,
     height: 40vw;
     width: 100%;
 }
-
-
-
-
 
 #placeholder-img {
     height: 100px;
@@ -138,39 +100,32 @@ div.card {
 
 .card-img-overlay {
     display: none;
-    color: #fff;
+    color: #000;
 }
 
-.card-text {
-    font-size: 2px;
-}
 
 .card-img-overlay:hover {
     transition-duration: 2s;
-    color: #000;
+    color: #fff;
     background-color: rgba(255, 255, 255, 0.492);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
 }
 
-
 .controles {
     margin-top: 10px;
 }
 
-.play img,
-.trailer img {
-    height: 30px;
+.play i {
+    color: #fff;
+    -webkit-text-stroke: .1px #000;
     display: none;
     transition-duration: .8s;
-    border-radius: 0%;
 }
 
-.play img:hover,
-.trailer img:hover {
+.play i:hover {
     transition-duration: .8s;
-    height: 40px;
 }
 
 
@@ -180,25 +135,16 @@ div.card {
     height: 80px;
 }
 
-
+img.apresentacao {
+    border-radius: none;
+}
 
 
 /* Tela Pequena */
-@media only screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .container {
         max-width: 576px;
-    }
-
-    button.navbar-toggler {
-        border: none;
-    }
-
-    .navbar-toggler-icon {
-        width: 1em;
-    }
-
-    .navbar-toggler {
-        padding: 0;
+        height: 100%;
     }
 
     .nav-item a,
@@ -206,9 +152,13 @@ div.card {
         font-size: 15px;
     }
 
+    #carrosel {
+        display: none;
+    }
+
     .imagem-filme {
         margin: 10px 0;
-        height: 400px;
+        height: 300px;
     }
 
     .carousel-caption p {
@@ -221,7 +171,7 @@ div.card {
     }
 
     #placeholder-img {
-        height: 60px;
+        height: 70px;
     }
 
     .row>* {
@@ -239,29 +189,16 @@ div.card {
         height: 40px;
     }
 
-    .card-img-overlay {
-        transition-duration: 0.5s;
-        color: #000;
-        background-color: rgba(255, 255, 255, 0.492);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        border-radius: 20px;
-    }
-
     .controles {
         margin-top: 7px;
     }
 
-    .play img,
-    .trailer img {
-        height: 40px;
-        transition-duration: .8s;
+    .play i {
+        font-size: 40px;
     }
 
-    .play img:hover,
-    .trailer img:hover {
-        transition: none;
-        height: 40px;
+    .play i:hover {
+        font-size: 60px;
     }
 
     #rodape {
@@ -286,23 +223,6 @@ div.card {
         max-width: 960px;
     }
 
-    button.navbar-toggler {
-        border: none;
-    }
-
-    .navbar-toggler-icon {
-        width: 1.7em;
-    }
-
-    .navbar-toggler {
-        padding: 0;
-    }
-
-    .nav-item a,
-    .nav-item button {
-        font-size: 30px;
-    }
-
     .imagem-filme {
         margin: 10px 0;
         height: 400px;
@@ -317,13 +237,21 @@ div.card {
         padding: 0;
     }
 
+    #carrosel .carousel-item {
+        max-height: 400px;
+    }
+
+    #carrosel img {
+        height: 80vh;
+    }
+
     #placeholder-img {
         height: 80px;
     }
 
     .card img {
         height: 100%;
-        width: 100%;
+        margin: 0;
     }
 
     .carousel-control-prev-icon,
@@ -332,29 +260,16 @@ div.card {
         height: 50px;
     }
 
-    .card-img-overlay {
-        transition-duration: 0.5s;
-        color: #000;
-        background-color: rgba(255, 255, 255, 0.492);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        border-radius: 20px;
-    }
-
     .controles {
         margin-top: 7px;
     }
 
-    .play img,
-    .trailer img {
-        height: 40px;
-        transition-duration: none;
+    .play i {
+        font-size: 40px;
     }
 
-    .play img:hover,
-    .trailer img:hover {
-        transition: none;
-        height: 40px;
+    .play i:hover {
+        font-size: 40px;
     }
 
     #rodape {
@@ -373,14 +288,18 @@ div.card {
         max-width: 1024px;
     }
 
-    .nav {
+    .navbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .nav-item button {
-        font-size: 40px;
+    .navbar-brand {
+        font-size: 50px;
+    }
+
+    .dropdown-toggle {
+        font-size: 20px;
     }
 
     .imagem-filme {
@@ -388,12 +307,17 @@ div.card {
         height: 500px;
     }
 
-    .apresentacao {
-        max-height: 400px;
+    #carrosel .carousel-item {
+        max-height: 800px;
+    }
+
+    #carrosel img {
+        height: 100vh;
     }
 
     .carousel-caption p {
-        font-size: 50px;
+        font-size: 70px;
+        text-shadow: #000;
     }
 
     section {
@@ -402,7 +326,7 @@ div.card {
     }
 
     #placeholder-img {
-        height: 90px;
+        height: 110px;
         text-align: center;
     }
 
@@ -422,29 +346,16 @@ div.card {
         color: #fff;
     }
 
-    .card-img-overlay:hover {
-        transition-duration: 0.5s;
-        color: #000;
-        background-color: rgba(255, 255, 255, 0.492);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        border-radius: 20px;
-    }
-
     .controles {
         margin-top: 7px;
     }
 
-    .play img,
-    .trailer img {
-        height: 35px;
-        transition-duration: .8s;
+    .play i {
+        font-size: 30px;
     }
 
-    .play img:hover,
-    .trailer img:hover {
-        transition: .9s;
-        height: 40px;
+    .play i:hover {
+        font-size: 70px;
     }
 
     footer {
